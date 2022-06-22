@@ -521,6 +521,10 @@ border-radius: 4px;
   align-items: baseline;
 }
 
+._footer {
+  color: var(--accent-color);
+  margin-right: 0px;
+}
 .navi_link,
 .footer {
   font-style: normal;
@@ -799,6 +803,7 @@ color: var(--text-color);
 margin-bottom: 4px;
 }
 .contact-form-messag{
+  display: block;
   width: 100%;
   height: 120px;
   border: 1px solid var(--input) ;
@@ -815,7 +820,7 @@ margin-bottom: 4px;
   color:var(--placeholder)
 }
 .contact-form-field{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .contact-modal-svg{
   position: absolute;
@@ -836,16 +841,19 @@ margin-bottom: 4px;
 }
 
  .contact-form-checkbox-label{
-  font-size: 14px;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
   margin-bottom: 16px;
   margin-right: 0;
-  font-weight: 400;
-font-size: 14px;
 line-height: 24px;
 letter-spacing: 0.03em;
+color: var(--text-color);
 
 }
 .contact-form-checkbox-label::before{
@@ -863,7 +871,7 @@ letter-spacing: 0.03em;
   border-color: var(--accent-color);
   background-color: var(--accent-color);
   background-size: contain;
-  background-image: url(/images/icon\ check.svg);
+  background-image: url(../images/Vector2svg.svg);
 }
 
 .contact-form-checkbox:focus + .contact-form-checkbox-label::before {
@@ -898,9 +906,10 @@ letter-spacing: 0.03em;
 }
 
 .contact-form-input-mail{
-  justify-content: flex-end;
-  width: 358px;
-  height: 50px;
+background: transparent;
+justify-content: flex-end;
+width: 358px;
+height: 50px;
 border-radius: 4px;
 padding: 16px 15px;
 margin-right: 12px;
@@ -913,6 +922,9 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-be
   border-color: var(--accent-color);
 }
 .contact-form-btn-email {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-width: 200px;
   height: 50px;
   letter-spacing: 0.06em;
@@ -925,7 +937,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-be
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
-  padding: 10px 56px;
+  padding: 10px 28px;
   
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -936,17 +948,15 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-be
   color: var(--primary-bg-color);
 }
 
-.footer-email-form{
- display: flex;
- flex-wrap: wrap;
- justify-content: flex-end;
- align-items: center;
-}
+ .footer-email-form{
+  margin-left: auto;
+} 
 
 .title_footer_link_email {
-    width: 100%;
+  display: block;
+    /* width: 100%; */
   margin-bottom: 20px;
-  margin-left: 32px;
+  /* margin-left: 32px; */
 font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -958,9 +968,8 @@ font-family: 'Roboto';
   color: var(--primary-bg-color);
 }
 .form_btn_email_svg{
+  margin-left: 10px;
   width: 24px;
   height: 24px;
-  margin-top: 0px;
-  margin-bottom: -7px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
