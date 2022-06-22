@@ -870,6 +870,8 @@ color: var(--text-color);
   border-color: var(--accent-color);
   background-color: var(--accent-color);
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   background-image: url(../images/Vector2svg.svg);
 }
 
