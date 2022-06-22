@@ -875,6 +875,7 @@ color: var(--text-color);
   background-image: url(../images/Vector2svg.svg);
 }
 
+
 .contact-form-checkbox:focus + .contact-form-checkbox-label::before {
   outline: 2px solid rgba(0, 0, 255, 0.5);
 }
