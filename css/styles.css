@@ -843,7 +843,6 @@ margin-bottom: 4px;
   width: 16px;
   height: 15px;
 }
-
  .contact-form-checkbox-label{
   display: flex;
   justify-content: center;
@@ -869,7 +868,6 @@ color: var(--text-color);
  border-radius: 2px;
  cursor: pointer;
 }
-
 .contact-form-checkbox:checked + .contact-form-checkbox-label::before{
   border-color: var(--accent-color);
   background-color: var(--accent-color);
@@ -878,12 +876,9 @@ color: var(--text-color);
   background-position: center;
   background-image: url(../images/Vector2svg.svg);
 }
-
-
 .contact-form-checkbox:focus + .contact-form-checkbox-label::before {
   outline: 2px solid rgba(0, 0, 255, 0.5);
 }
-
 .contact-form-btn {
   width: 200px;
   height: 50px;
